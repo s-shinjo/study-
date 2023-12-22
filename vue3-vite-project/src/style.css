@@ -28,6 +28,16 @@ button:disabled {
   opacity: 0.5; /* disabledの場合はグレーアウトにする */
 }
 
+#plusButton {
+  background-color: rgb(2, 117, 248);
+}
+#minusButton {
+  background-color: gray;
+}
+#removeButton {
+  background-color: gray;
+}
+
 .navigation {
   transform: translate(0px, 40px);
   width: 800px;
