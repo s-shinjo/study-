@@ -33,7 +33,6 @@
 
     <p class="errorMsg" v-if="errMsg">{{ errMsg }}</p>
     <p><button :disabled="!isValidField()" @click="register">登録</button></p>
-    <!-- <p><button @click="signInWithGoogle">Googleでサインインする</button></p> -->
   </div>
 </template>
 
