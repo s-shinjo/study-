@@ -5,7 +5,6 @@
     <p><input type="password" placeholder="パスワード" v-model="password"></p>
     <p class="errorMsg" v-if="errMsg">{{ errMsg }}</p>
     <p><button @click="login" >ログイン</button></p>
-    <!-- <p><button @click="signInWithGoogle">Googleでサインインする</button></p> -->
   </div>
 </template>
 
