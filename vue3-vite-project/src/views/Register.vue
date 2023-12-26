@@ -16,7 +16,7 @@
       <dd><input id="inputIcon" type="file" @change="handleFileChange"></dd>
 
       <dt>生年月日&nbsp;：&nbsp;</dt>
-      <dd><input id="inputDate" type="date" placeholder="生年月日" v-model="birthday"></dd>
+      <dd><input class="dateForm" type="date" placeholder="生年月日" v-model="birthday"></dd>
 
       <dt>性別&nbsp;：&nbsp;</dt>
       <dd>
@@ -26,7 +26,7 @@
     </dl>
 
     <p>
-      <input type="checkbox" id="check_agreement" v-model="agreement">
+      <input type="checkbox" id="check_agreement" v-model="isAgreement">
       <label for="check_agreement">&nbsp;利用規約への同意</label><br>
       <a href="https://www.notion.so/5452f89a493d44abb64a05f370313f6c?pvs=21" target="_blank">利用規約</a>
     </p>
@@ -49,7 +49,7 @@ const password  = ref('');
 const user_name = ref('');
 const birthday  = ref('1990-01-01');
 const sex       = ref('man');
-const agreement = ref(false);
+const isAgreement = ref(false);
 
 const router = useRouter();
 const errMsg = ref('');
@@ -85,7 +85,7 @@ function isValidField() {
                   && password.value.trim()  !== ''
                   && user_name.value.trim() !== ''
                   && birthday.value.trim()  !== ''
-                  && agreement.value;
+                  && isAgreement.value;
   return isValid;
 }
 
